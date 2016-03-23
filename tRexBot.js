@@ -12,7 +12,7 @@ function tRexBot(){
             uiMsg += "<li>Obstacle "+(x+1)+" position:"+Runner.instance_.horizon.obstacles[x].xPos+" size: "+Runner.instance_.horizon.obstacles[x].size+"</li>";
             
             if(Runner.instance_.horizon.obstacles[x].xPos < trexHitBox.jumpBefore && Runner.instance_.horizon.obstacles[x].xPos > 40){
-                Runner.instance_.tRex.startJump();
+                Runner.instance_.tRex.startJump(5);
             }
             
             if(Runner.instance_.horizon.obstacles[x].xPos + Runner.instance_.horizon.obstacles[x].width/2 < 50){
